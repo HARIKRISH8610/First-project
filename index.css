@@ -1,0 +1,75 @@
+.inNotes{
+    width: 100%;
+    height: auto;
+}
+#note{
+    width: 450px;
+    background-color: rgba(161, 228, 228, 0.2);
+}
+.btnDelete{
+    color: black;
+     border-color: rgba(0, 0, 0, 0.2) !important;
+     background-color: rgba(161, 228, 228) !important;
+    }
+.btnSubmit{
+    background-color:rgba(161, 228, 228) !important;
+    }
+.btnSubmit:hover{
+    background-color:rgba(76, 230, 230, 0.5) !important ;
+}
+.btnReset{
+    background-color:rgba(161, 228, 228, 0.3) !important;
+}
+.btnReset:hover{
+    background-color:rgba(57, 252, 252, 0.2) !important;
+
+}
+.btnDelete:hover{
+    background-color: rgb(252, 79, 79) !important;
+    color: white !important;
+}
+.stCard{
+    width: 530px;
+    height: auto;
+}
+.card-body{
+    background-color: rgba(179, 235, 235, 0.5);
+    width: 380px;
+}
+.card-header{
+    background-color: rgb(161, 228, 228) !important;
+
+}
+.cardbody{
+    width: 380px;
+    display: inline-flex !important;
+    height: auto;
+    margin-left: 50px !important;
+    left: 20 !important;
+    background-color: white !important;
+    align-items: center;
+    opacity: none;
+
+}
+.cardbody:before{
+    border-radius: 20px;
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    filter: blur(10px);
+    z-index: -1;
+   margin-left: -15px;
+    margin-top: 10px;
+    width: 380px;
+    height: 160px;
+}
+#cards{
+    width: 100%;
+}
+.cardWidth{
+    width:380px !important;
+}
+.cardbody p{
+    width:345px !important;
+    height: auto;
+}
