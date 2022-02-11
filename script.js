@@ -3,7 +3,7 @@ var inCards = document.getElementById("cards");
 
 onLoadNotes();
 function onLoadNotes() {
-  if (localStorage.key("Notes") == null) {
+  if (localStorage.getItem("Notes") == null) {
     nullInnerHtml();
   } else {
     innerHtml();
@@ -30,6 +30,7 @@ function nullInnerHtml() {
 }
 
 function innerHtml() {
+
   var newLocalNotes = localStorage.getItem("Notes").split(",");
   inCards.innerHTML = "";
   newLocalNotes.forEach(function (element, index) {
@@ -62,7 +63,7 @@ function fnSubmit() {
     if (strSreach !== true) {
       var confirmSmt = confirm("Are you sure to submit.");
       if (confirmSmt) {
-        if (localStorage.key("Notes") !== null) {
+        if (localStorage.getItem("Notes") !== null) {
           arrNotes = [];
           var getLocalNotes = localStorage.getItem("Notes").split(",");
           arrNotes.push(getLocalNotes, inNotes.value);
